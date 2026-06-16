@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "holey") (type "KiCad") (uri "${KIPRJMOD}/holey.pretty") (options "") (descr ""))
+)
