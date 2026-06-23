@@ -4,10 +4,13 @@
 
 #pragma region structs and variables
 
-const int VEDIRECT_RX_PIN_1 = 10;
-const unsigned long PUSH_INTERVAL_MS = 2000;
-
+const int VEDIRECT_RX_PIN_1 = 6;
+const int VEDIRECT_RX_PIN_2 = 10;
+const int VEDIRECT_RX_PIN_3 = 14;
 SerialPIO veSerial1(NOPIN, VEDIRECT_RX_PIN_1, 384);
+SerialPIO veSerial2(NOPIN, VEDIRECT_RX_PIN_2, 384);
+SerialPIO veSerial3(NOPIN, VEDIRECT_RX_PIN_3, 384);
+
 WiFiClient client;
 Wiznet5500lwIP eth(17, SPI, 21);
 
@@ -64,6 +67,11 @@ void setup() {
     delay(500);
   }
 
+  while (!eth.localIP()) {
+    print(",");
+    delay(500);
+  }
+
   println("");
   println("Ethernet connected");
   println("IP address: ");
@@ -71,6 +79,12 @@ void setup() {
 
   pinMode(VEDIRECT_RX_PIN_1, INPUT);
   veSerial1.begin(19200);
+
+  pinMode(VEDIRECT_RX_PIN_2, INPUT);
+  veSerial2.begin(19200);
+
+  pinMode(VEDIRECT_RX_PIN_3, INPUT);
+  veSerial3.begin(19200);
 
   println("Setup complete");
 }
@@ -81,10 +95,20 @@ void setup() {
 void loop() {
   println("");
   println("");
-  println("Tick");
-  readVeDirect();
+  println("Tick 1");
+  readAndPush(veSerial1, 257);
+  println("Tick 2");
+  readAndPush(veSerial2, 258);
+  println("Tick 3");
+  readAndPush(veSerial3, 259);
+
+  println("Done");
 
   delay(1000);
+}
+
+void readAndPush(SerialPIO& serial, int deviceInstance) {
+  readVeDirect(serial);
 
   if (is_charger_data_received == false) {
     println("No charger data");
@@ -102,15 +126,12 @@ void loop() {
     return;
   }
 
-  if (millis() - lastPushMs < PUSH_INTERVAL_MS) {
-    println("Too soon");
-    return;
-  }
-
   if (CurrentMpptData.frameValid == false) {
     println("Corrupt data");
     return;
   }
+
+  CurrentMpptData.deviceInstance = deviceInstance;
 
   println("Push");
   lastPushMs = millis();
@@ -123,16 +144,14 @@ void loop() {
   }
 
   is_charger_data_received = false;
-
-  println("Done");
 }
 
 #pragma endregion
 #pragma region victron
 
-void readVeDirect() {
-  while (veSerial1.available()) {
-    char c = (char)veSerial1.read();
+void readVeDirect(SerialPIO& serial) {
+  while (serial.available()) {
+    char c = (char)serial.read();
     //print(c);
     if (c == '\n') {
       processLine(lineBuffer);
@@ -172,7 +191,7 @@ int toIntSafe(const String& value, int fallback = 0) {
 }
 
 void commitFrame() {
-  CurrentMpptData.deviceInstance = 257;
+  CurrentMpptData.deviceInstance = 256;
   CurrentMpptData.productId = getValue("PID");
   CurrentMpptData.firmwareVersion = getValue("FW").substring(0, 1) + "." + getValue("FW").substring(1, 3);
   CurrentMpptData.serialNumber = getValue("SER#");

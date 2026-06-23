@@ -3,21 +3,10 @@
 import argparse
 import logging
 import threading
-import os
-import sys
 
 from http.server import ThreadingHTTPServer
 from DeviceManager import DeviceManager
 from HttpWrapper import HttpWrapper
-
-# Victron local packages
-sys.path.insert(
-    1,
-    os.path.join(
-        os.path.dirname(__file__),
-        "/opt/victronenergy/dbus-systemcalc-py/ext/velib_python",
-    ),
-)
 
 from gi.repository import GLib
 from dbus.mainloop.glib import DBusGMainLoop

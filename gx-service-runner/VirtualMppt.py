@@ -2,6 +2,18 @@ import logging
 import threading
 import time
 from dbus.bus import BusConnection
+
+import os
+import sys
+
+# Victron local packages
+sys.path.insert(
+    1,
+    os.path.join(
+        os.path.dirname(__file__),
+        "/opt/victronenergy/dbus-systemcalc-py/ext/velib_python",
+    ),
+)
 from vedbus import VeDbusService
 
 
@@ -47,7 +59,7 @@ class VirtualMppt:
         s.add_path('/FirmwareVersion', fw_version)
         s.add_path('/Connected', 1)
         s.add_path('/Serial', serial_number)
-        s.add_path('/CustomName', "(Custom name)", writeable=True)
+        s.add_path('/CustomName', "Victron MPPT " + serial_number, writeable=True)
 
         # Function-related paths
         s.add_path('/State', 0)
