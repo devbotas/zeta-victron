@@ -488,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "holey.kicad_pro",
+    "filename": "holey-L.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -641,7 +641,13 @@
     "reuse_designators": true,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
-    "top_level_sheets": [],
+    "top_level_sheets": [
+      {
+        "filename": "holey-L.kicad_sch",
+        "name": "holey-L",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
     "used_designators": "",
     "variants": []
   },
