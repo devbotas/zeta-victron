@@ -1,3 +1,5 @@
 **/.idea
 
 mppt-serial-monitor/secrets.h
+
+**/*-backups/
