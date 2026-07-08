@@ -882,6 +882,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Jumper:Jumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_Module:WizNet_W55RP20_EVB_Pico"
 			(pin_names
 				(offset 0.762)
@@ -2179,6 +2345,12 @@
 		(uuid "53cf2d0b-19ad-4b15-b4c8-77fbca9892bc")
 	)
 	(junction
+		(at 114.3 130.81)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "686af5d8-2627-4061-889a-03b6e698566c")
+	)
+	(junction
 		(at 71.12 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2207,6 +2379,38 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e729ba15-a984-4594-8ff1-c02691403207")
+	)
+	(no_connect
+		(at 114.3 50.8)
+		(uuid "2671056b-2cf3-40a8-a9fd-e0c8629c95a4")
+	)
+	(no_connect
+		(at 119.38 50.8)
+		(uuid "3a3d34ed-22fd-404d-a3d2-aab5defc3caa")
+	)
+	(no_connect
+		(at 109.22 50.8)
+		(uuid "47731338-e77d-4984-a2b5-e081e473c7f3")
+	)
+	(no_connect
+		(at 137.16 101.6)
+		(uuid "73c90e1b-677c-4d25-a410-6c61016002ea")
+	)
+	(no_connect
+		(at 137.16 104.14)
+		(uuid "8cbbdd65-48ad-4ddb-8e44-abe5536cc12b")
+	)
+	(no_connect
+		(at 137.16 96.52)
+		(uuid "b7fe3482-955a-4cd9-b8ed-babee5316d51")
+	)
+	(no_connect
+		(at 91.44 66.04)
+		(uuid "e547313f-7b30-4f8e-b68a-7b52d20f3c7d")
+	)
+	(no_connect
+		(at 91.44 68.58)
+		(uuid "ebce9cc9-9a2f-4472-9155-25103c18dee8")
 	)
 	(wire
 		(pts
@@ -2370,7 +2574,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 124.46) (xy 114.3 127)
+			(xy 114.3 124.46) (xy 114.3 130.81)
 		)
 		(stroke
 			(width 0)
@@ -2740,6 +2944,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 111.76) (xy 138.43 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b511ed7b-5afd-4149-8bda-bbc2db3b08aa")
+	)
+	(wire
+		(pts
 			(xy 90.17 78.74) (xy 91.44 78.74)
 		)
 		(stroke
@@ -2777,6 +2991,16 @@
 			(type default)
 		)
 		(uuid "c1e17c19-4d34-45d7-92c0-c03d19ae3bb7")
+	)
+	(wire
+		(pts
+			(xy 138.43 130.81) (xy 114.3 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c32f7fbe-ff18-426e-90da-b81c9c73ef8b")
 	)
 	(wire
 		(pts
@@ -2820,6 +3044,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 125.73) (xy 138.43 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db34d280-9963-4f9d-a402-26f5df205904")
+	)
+	(wire
+		(pts
 			(xy 60.96 109.22) (xy 91.44 109.22)
 		)
 		(stroke
@@ -2827,6 +3061,16 @@
 			(type default)
 		)
 		(uuid "dbb89951-e0a3-4e71-95f9-0be53f5b188a")
+	)
+	(wire
+		(pts
+			(xy 114.3 130.81) (xy 114.3 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd2b14e8-c935-4e02-8431-35efd518a76e")
 	)
 	(wire
 		(pts
@@ -2887,6 +3131,16 @@
 			(type default)
 		)
 		(uuid "f3ad6337-4e42-45f6-97fa-47ec901f73aa")
+	)
+	(wire
+		(pts
+			(xy 137.16 111.76) (xy 138.43 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3bf5bb7-ae1f-4fc4-a4a4-3cebf0a69b5a")
 	)
 	(wire
 		(pts
@@ -3002,7 +3256,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 127 0)
+		(at 114.3 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3013,7 +3267,7 @@
 		(fields_autoplaced yes)
 		(uuid "0a8c5d84-40d2-4c08-ba3f-43974f135d86")
 		(property "Reference" "#PWR05"
-			(at 114.3 133.35 0)
+			(at 114.3 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3024,7 +3278,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 132.08 0)
+			(at 114.3 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3034,7 +3288,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 127 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3045,7 +3299,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 127 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3056,7 +3310,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 127 0)
+			(at 114.3 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4259,6 +4513,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:Jumper_2_Bridged")
+		(at 138.43 120.65 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "85cb044c-f7d8-4ed8-9b39-8a7d1e014b63")
+		(property "Reference" "JP1"
+			(at 139.7 119.3799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Jumper_2_Bridged"
+			(at 139.7 121.9199 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
+			(at 138.43 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, closed/bridged"
+			(at 146.05 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "27e84d38-2d55-4a72-b803-0b3a5df1206f")
+		)
+		(pin "2"
+			(uuid "3680079d-d9a0-47d3-a780-f764a8facd92")
+		)
+		(instances
+			(project "uart-combiner"
+				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 86.36 88.9 270)
 		(unit 1)
@@ -4693,8 +5030,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 143.51 110.49 90)
-			(hide yes)
+			(at 143.764 108.966 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5177,7 +5513,7 @@
 			)
 		)
 		(property "Value" "2.2k"
-			(at 81.534 110.49 90)
+			(at 81.534 110.744 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5556,10 +5892,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f7f068d6-6bc3-4540-be08-598c1c4ff6db")
 		(property "Reference" "A1"
-			(at 116.4433 123.19 0)
+			(at 95.504 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5569,8 +5904,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "RaspberryPi_Pico"
-			(at 116.4433 125.73 0)
+		(property "Value" "WizNet W55RP20 EVB Pico"
+			(at 120.904 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

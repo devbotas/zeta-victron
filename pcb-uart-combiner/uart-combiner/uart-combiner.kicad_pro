@@ -524,7 +524,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "output",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -648,7 +648,7 @@
         "uuid": "7f25198e-49d0-435a-a5a4-97946e7fb4eb"
       }
     ],
-    "used_designators": "H1-4,TP1,R3-11,#PWR1-7,#PWR31-35,J1-9,D3-11,A1",
+    "used_designators": "H1-4,JP1,TP1,R3-11,#PWR1-8,#PWR31-35,J1-9,D3-11,A1",
     "variants": []
   },
   "sheets": [
