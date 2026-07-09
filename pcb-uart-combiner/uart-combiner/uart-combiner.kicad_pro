@@ -90,10 +90,6 @@
         [
           "silk_edge_clearance|146835000|135600000|62e24579-9a82-481c-b1bf-fa3e1ff4e27d|9ef0b0af-2986-43e3-90a2-027aabee0767",
           "Special shape."
-        ],
-        [
-          "silk_edge_clearance|147175000|148700000|fc6084de-691e-441c-a6f2-c80186638eee|c592e628-6d0f-4ed0-9906-49e3cd37aecf",
-          "Special shape."
         ]
       ],
       "meta": {
@@ -536,6 +532,16 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "line_style": 0,
+        "name": "PWR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "tuning_profile": "",
+        "wire_width": 12
       }
     ],
     "meta": {
@@ -543,7 +549,12 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -673,7 +684,7 @@
         "uuid": "7f25198e-49d0-435a-a5a4-97946e7fb4eb"
       }
     ],
-    "used_designators": "H1-4,JP1,TP1,R3-11,#PWR1-9,#PWR31-37,J1-9,D3-11,A1",
+    "used_designators": "H1-4,JP1,TP1,R1-11,#PWR1-14,#PWR31-37,J1-9,D1-11,A1",
     "variants": []
   },
   "sheets": [

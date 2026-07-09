@@ -2519,6 +2519,12 @@
 		(uuid "9238022a-011a-4f30-b20d-0cc94a49acd2")
 	)
 	(junction
+		(at 80.01 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9b5f663-15d3-48fc-bab0-a98ec309a48f")
+	)
+	(junction
 		(at 119.38 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2529,12 +2535,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cdd3a6e6-258f-4229-948d-38852c4c6543")
-	)
-	(junction
-		(at 80.01 113.03)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de459e58-5d57-4625-b74d-9adbdecddd92")
 	)
 	(junction
 		(at 96.52 120.65)
@@ -2982,7 +2982,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 113.03) (xy 80.01 125.73)
+			(xy 80.01 113.03) (xy 80.01 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3341,7 +3341,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "00a91f8a-9cc6-4ddd-8e66-cf0e84374907")
-		(property "Reference" "D9"
+		(property "Reference" "D5"
 			(at 129.794 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3416,7 +3416,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D9")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3434,7 +3434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a8c5d84-40d2-4c08-ba3f-43974f135d86")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR012"
 			(at 162.56 151.13 0)
 			(hide yes)
 			(show_name no)
@@ -3494,7 +3494,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR05")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
@@ -3512,7 +3512,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2eac641a-cbc0-44fc-a19d-0d57f72fda6e")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR05"
 			(at 99.06 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3572,7 +3572,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR09")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3589,7 +3589,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "313d2edb-3fc3-46d1-bd4f-f9493c1ed986")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR06"
 			(at 106.68 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3650,7 +3650,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR035")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -3667,7 +3667,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "342b5e29-1d85-4b7e-9e92-6064f2e0260f")
-		(property "Reference" "R10"
+		(property "Reference" "R4"
 			(at 134.366 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3729,7 +3729,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R10")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -3746,7 +3746,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3d51891c-a7b1-4d2c-928e-07f70d1eb4b0")
-		(property "Reference" "D10"
+		(property "Reference" "D4"
 			(at 129.794 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3821,7 +3821,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D10")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3838,7 +3838,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "45947e43-5f4d-4738-b79f-e5ed38f5b17e")
-		(property "Reference" "J7"
+		(property "Reference" "J4"
 			(at 87.63 118.11 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3907,7 +3907,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "J7")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3925,7 +3925,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "496de5de-e053-4116-87f1-5e91f4d33180")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR013"
 			(at 167.64 52.07 0)
 			(hide yes)
 			(show_name no)
@@ -3985,7 +3985,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR01")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -3993,7 +3993,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 125.73 0)
+		(at 80.01 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4003,8 +4003,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4eabd883-85c4-4747-8625-c2a1cb7b8e84")
-		(property "Reference" "#PWR08"
-			(at 80.01 132.08 0)
+		(property "Reference" "#PWR01"
+			(at 80.01 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4015,7 +4015,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 130.81 0)
+			(at 80.01 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4025,7 +4025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 125.73 0)
+			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4036,7 +4036,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 125.73 0)
+			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4047,7 +4047,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 125.73 0)
+			(at 80.01 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4063,7 +4063,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR08")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -4080,7 +4080,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "57c1caf7-d1ac-4a17-871b-a1172c1c9c77")
-		(property "Reference" "J1"
+		(property "Reference" "J2"
 			(at 70.866 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4091,9 +4091,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
-			(at 71.12 109.2201 0)
-			(hide yes)
+		(property "Value" "I2C1"
+			(at 68.834 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4151,7 +4150,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "J1")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -4244,7 +4243,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5e3195af-daee-4db0-8788-fd6718adbf08")
-		(property "Reference" "D8"
+		(property "Reference" "D6"
 			(at 129.794 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4319,7 +4318,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D8")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4415,7 +4414,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "672a5068-f065-464a-8099-9bbda6041647")
-		(property "Reference" "J9"
+		(property "Reference" "J1"
 			(at 70.866 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4426,9 +4425,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
-			(at 71.12 93.9801 0)
-			(hide yes)
+		(property "Value" "UART1/I2C0"
+			(at 68.834 88.646 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4486,7 +4484,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "J9")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -4503,7 +4501,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "67f97033-0d4f-4f54-b75c-fd26549754aa")
-		(property "Reference" "D5"
+		(property "Reference" "D7"
 			(at 201.168 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4578,7 +4576,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D5")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -4595,7 +4593,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "697d07e6-cbef-48c0-b8a7-3ef6c4cf9f7f")
-		(property "Reference" "R9"
+		(property "Reference" "R5"
 			(at 134.366 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4657,7 +4655,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R9")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -4674,7 +4672,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6e4687ca-a3ab-4502-8489-10b1dfadf300")
-		(property "Reference" "D4"
+		(property "Reference" "D1"
 			(at 128.524 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4749,7 +4747,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D4")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4842,7 +4840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83b133f9-28f7-434a-a1db-89b252ef93df")
-		(property "Reference" "D11"
+		(property "Reference" "D3"
 			(at 129.794 99.06 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,7 +4915,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D11")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5017,7 +5015,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8cd32519-a818-426a-b2d9-76a36928969a")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR011"
 			(at 134.62 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5078,7 +5076,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR036")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5095,7 +5093,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8ea5628e-ce25-4864-9084-ea811996c71d")
-		(property "Reference" "R11"
+		(property "Reference" "R3"
 			(at 134.366 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5157,7 +5155,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R11")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5174,7 +5172,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "929a6b10-046a-4501-95fd-3bdd0f1877e2")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 128.524 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5249,7 +5247,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5353,7 +5351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "975ee099-3308-4016-9ce1-0c4df34d458c")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR014"
 			(at 208.28 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5413,7 +5411,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR07")
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5431,7 +5429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d765ddb-2b50-4742-bb9b-72ea32c99e40")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR03"
 			(at 96.52 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -5491,7 +5489,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR04")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -5508,7 +5506,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a21a5b67-a282-4aab-8b25-ad4105d68a27")
-		(property "Reference" "R5"
+		(property "Reference" "R7"
 			(at 192.024 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5570,7 +5568,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R5")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -5751,7 +5749,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "af4983cd-49ef-49a2-9b07-e0702a630ac2")
-		(property "Reference" "J8"
+		(property "Reference" "J3"
 			(at 87.376 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5822,7 +5820,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "J8")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5915,7 +5913,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b56bbb97-0011-4341-8d8e-a1ddaba9b3f7")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR08"
 			(at 115.57 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -5976,7 +5974,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR037")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5993,7 +5991,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c2f3cb53-3d1d-4820-a6af-3f0f8dd11473")
-		(property "Reference" "R3"
+		(property "Reference" "R2"
 			(at 134.366 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6055,7 +6053,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R3")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -6072,7 +6070,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d247e7fb-f3d8-497b-8e99-0688898d4664")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 134.366 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6134,7 +6132,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -6152,7 +6150,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8a38c16-6ea5-4f0b-9ecf-c9a431f34134")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR04"
 			(at 97.79 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -6212,7 +6210,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR06")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -6229,7 +6227,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e94004b9-5de1-4913-a35b-11bc60b7067c")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR010"
 			(at 125.73 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6290,7 +6288,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR034")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -6385,7 +6383,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ecad26c9-6cd0-4ae6-935b-cce1d638d198")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR07"
 			(at 114.3 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6446,7 +6444,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR031")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -6464,7 +6462,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f675f2b8-4030-4743-b543-adda1700256b")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR09"
 			(at 119.38 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -6524,7 +6522,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "#PWR03")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -6745,7 +6743,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f96e9738-7fa8-4139-9933-985aa76aade9")
-		(property "Reference" "R4"
+		(property "Reference" "R1"
 			(at 134.366 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6808,7 +6806,7 @@
 		(instances
 			(project "uart-combiner"
 				(path "/7f25198e-49d0-435a-a5a4-97946e7fb4eb"
-					(reference "R4")
+					(reference "R1")
 					(unit 1)
 				)
 			)
