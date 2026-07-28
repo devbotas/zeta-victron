@@ -31,4 +31,4 @@ class DeviceManager:
             for instance in stale:
                 device = self.devices.pop(instance)
                 device.unregister()
-        return
+        return True
